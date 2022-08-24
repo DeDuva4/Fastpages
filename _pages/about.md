@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fastpages Blog
+title: About Us
 permalink: /about/
 ---
 
@@ -8,4 +8,4 @@ This website is powered by Dhruva and Prasith
 
 
 
-Learning CSP
+We are currently learning CSP
