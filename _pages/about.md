@@ -8,4 +8,4 @@ This website is powered by Dhruva and Prasith
 
 
 
-We are currently learning CSP
+[^1]: We are currently learning AP CSP. This is our Fastpages Blog.
