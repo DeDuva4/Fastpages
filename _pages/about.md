@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About Me
+title: Fastpages Blog
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+This website is powered by **[Dhruva and Prasith]
 
 
 
