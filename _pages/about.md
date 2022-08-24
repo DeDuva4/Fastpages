@@ -8,4 +8,4 @@ This website is powered by Dhruva and Prasith
 
 
 
-Learning CSP Right Now
+Learning CSP
