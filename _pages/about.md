@@ -4,8 +4,8 @@ title: About Us
 permalink: /about/
 ---
 
-This website is powered by Dhruva and Prasith
+This website is powered by Dhruva.
 
 
 
-[^1]: We are currently learning AP CSP. This is our Fastpages Blog.
+[^1]: I am currently learning AP CSP. This is my Fastpages Blog.
