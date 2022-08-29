@@ -1,7 +1,4 @@
 ---
-# First Jupyter Notebook
-A tutorial of fastpages for Jupyter notebooks.
-
 - toc: true 
 - badges: true
 - comments: true
