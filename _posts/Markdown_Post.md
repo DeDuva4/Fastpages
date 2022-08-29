@@ -6,9 +6,10 @@ A tutorial of fastpages for Jupyter notebooks.
 - badges: true
 - comments: true
 - categories: [jupyter]
+- title: First Markdown Post
 ---
 
 
 # Markdown Post
 
-This is a Markdown Post Markdown Posts always have the .md extension and can be found in posts.
+This is my first Markdown Post. Markdown Posts always have the .md extension and can be found in posts.
