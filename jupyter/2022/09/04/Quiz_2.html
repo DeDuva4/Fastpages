@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -133,6 +133,14 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following cell creates a list of dictionaries with information about me and my brother Kanishka. This acts as a database for my quiz function to refer to.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -166,6 +174,14 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I created this function which asks questions like a quiz about a list of dictionaries that is given to it. This will take the dictionaries created above and convert them into a series of questions.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -230,6 +246,14 @@ you answered:  6 / 6
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is a simple while loop function that takes two integers that you give it, and inclusively lists all the integers in between them from least to greatest. The first integer must be less than the second integer.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -283,6 +307,93 @@ you answered:  6 / 6
 23
 24
 25
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is a function that uses a recursive loop, which means that when the function is defined, it calls for itself. This can create a loop that repeats itself until a specific condition is met. In this case takes a dictionary value and increments itself while adding itself to a sum. This creates a factorial like function, but for addition. For example if you input 1 into this function, it will take 1+2+3+4+5 = 15.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">example_recursive</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">example_recursive</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"End of recursive loop"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="k">def</span> <span class="nf">example_recursive_dict</span><span class="p">(</span><span class="n">dict_obj</span><span class="p">,</span> <span class="n">NN</span><span class="p">):</span>
+    <span class="c1">#dict_obj['val'] = int(dict_obj['val'])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'inside example_recursive_dict, val is: '</span><span class="p">,</span><span class="n">dict_obj</span><span class="p">[</span><span class="s1">'val'</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">dict_obj</span><span class="p">[</span><span class="s1">'val'</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">NN</span><span class="p">:</span>        
+        <span class="n">dict_obj</span><span class="p">[</span><span class="s1">'val'</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">dict_obj</span><span class="p">[</span><span class="s1">'sum'</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dict_obj</span><span class="p">[</span><span class="s1">'val'</span><span class="p">]</span> 
+        <span class="c1">#print('inside if')</span>
+        <span class="n">example_recursive_dict</span><span class="p">(</span><span class="n">dict_obj</span><span class="p">,</span> <span class="n">NN</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"End of recursive loop"</span><span class="p">)</span>
+    
+
+<span class="c1">#recursive_var = input("What number should we start with?")</span>
+<span class="c1">#recursive_var=example_recursive(recursive_var)</span>
+<span class="c1">#print(recursive_var)</span>
+
+
+<span class="k">def</span> <span class="nf">example_by_reference</span><span class="p">(</span><span class="n">dict_obj</span><span class="p">):</span>
+    <span class="n">dict_obj</span><span class="p">[</span><span class="s1">'val'</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">dict_test</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'val'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'sum'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dict_test</span><span class="p">[</span><span class="s1">'val'</span><span class="p">])</span>
+<span class="n">example_by_reference</span><span class="p">(</span><span class="n">dict_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dict_test</span><span class="p">[</span><span class="s1">'val'</span><span class="p">])</span>
+<span class="n">example_by_reference</span><span class="p">(</span><span class="n">dict_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dict_test</span><span class="p">[</span><span class="s1">'val'</span><span class="p">])</span>
+<span class="n">dict_test</span><span class="p">[</span><span class="s1">'val'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">dict_test</span><span class="p">[</span><span class="s1">'sum'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">example_recursive_dict</span><span class="p">(</span><span class="n">dict_test</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'summation is done, value is: '</span><span class="p">,</span> <span class="n">dict_test</span><span class="p">[</span><span class="s1">'sum'</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2
+3
+4
+inside example_recursive_dict, val is:  0
+inside example_recursive_dict, val is:  1
+inside example_recursive_dict, val is:  2
+inside example_recursive_dict, val is:  3
+inside example_recursive_dict, val is:  4
+inside example_recursive_dict, val is:  5
+End of recursive loop
+summation is done, value is:  15
 </pre>
 </div>
 </div>
