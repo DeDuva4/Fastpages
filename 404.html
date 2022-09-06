@@ -21,16 +21,25 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"Fastpages Blog","headline":"Fastpages Blog","url":"https://deduva4.github.io/Fastpages/404.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-
     <link rel="stylesheet" href="/Fastpages/assets/css/style.css?v=">
-    <script src="/Fastpages/assets/js/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/Fastpages/assets/js/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/Fastpages/assets/css/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#353535">
+<meta name="msapplication-navbutton-color" content="#353535">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
 
 <!-- Setup Google Analytics -->
 
@@ -43,21 +52,27 @@
 
   </head>
   <body>
-    <div class="wrapper">
-      <header >
-        <h1>Fastpages Blog</h1>
-        
-          <p>Fastpages Blog</p>
-        
-        <p class="view"><a href="">View the Project on GitHub <small></small></a></p>
-        <ul>
-        
-          <li><a href="">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
+      <div id="header">
+        <nav>
+          <ul>
+            <li class="fork"><a href="">View On GitHub</a></li>
+            
+          </ul>
+        </nav>
+      </div><!-- end header -->
 
-      <style type="text/css" media="screen">
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Fastpages Blog</h1>
+          <p>Fastpages Blog</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href=""></a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+        </div>
+
+        <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
     max-width: 600px;
@@ -79,11 +94,7 @@
 
 
       </section>
+
     </div>
-    <footer>
-    
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
   </body>
 </html>
