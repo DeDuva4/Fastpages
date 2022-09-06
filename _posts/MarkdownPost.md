@@ -2,7 +2,7 @@
 - toc: true 
 - badges: true
 - comments: true
-- categories: [jupyter]
+- categories: [Markdown]
 - title: First Markdown Post
 ---
 # First Markdown Post
