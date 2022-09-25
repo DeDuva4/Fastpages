@@ -58,7 +58,7 @@
     
         ,"post5": {
             "title": "CSP Notes",
-            "content": "This is What I learnt this week . Problems with changing themes. Although most themes look better than the original fastpages theme, the functionality of the site will be affected. Pages, tags, and search bar become unaccessible after switching themes. . For my basicCreate project I want to make an app that takes many peoples school schedules, and then notifies them of classes that they share with people in their contacts. For example after the class schedules are released before a new trimester, you can input your schedule, and see which friends are in your classes. .",
+            "content": "This is What I learnt this week . Problems with changing themes. Although most themes look better than the original fastpages theme, the functionality of the site will be affected. Pages, tags, and search bar become unaccessible after switching themes. . For my basicCreate project I want to make an app that takes many peoples school schedules, and then notifies them of classes that they share with people in their contacts. For example after the class schedules are released before a new trimester, you can input your schedule, and see which friends are in your classes. . This is proof that I can change without commiting on a local server. Now i&#39;ll comit it. .",
             "url": "https://deduva4.github.io/Fastpages/jupyter/2022/08/28/Notes.html",
             "relUrl": "/jupyter/2022/08/28/Notes.html",
             "date": " • Aug 28, 2022"
