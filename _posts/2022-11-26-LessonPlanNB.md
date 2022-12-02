@@ -750,7 +750,7 @@ More work: Create a list of your favorite foods and create an index to access th
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;Which brackets are used to assign values to a variable to make a list?&quot;</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;[]&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
-    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">2</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span> 
 
@@ -758,6 +758,29 @@ More work: Create a list of your favorite foods and create an index to access th
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, deduva running /bin/python3
+You will be asked 4 questions.
+Question: Are you ready to take a test?
+Question: The purpose of lists and dictionaries are to manage the ____ of a program
+complexity is correct!
+Question: Lists are a form of data ______
+abstraction is correct!
+Question: Which brackets are used to assign values to a variable to make a list?
+[] is correct!
+deduva you scored 4/4
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -785,10 +808,25 @@ More work: Create a list of your favorite foods and create an index to access th
 <span class="n">food3</span> <span class="o">=</span> <span class="s2">&quot;sushi&quot;</span>
 <span class="n">food4</span> <span class="o">=</span> <span class="s2">&quot;strawberry&quot;</span>
 <span class="n">food5</span> <span class="o">=</span> <span class="s2">&quot;sandwich&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">food1</span><span class="p">,</span> <span class="n">food2</span><span class="p">,</span> <span class="n">food3</span><span class="p">,</span> <span class="n">food4</span><span class="p">,</span> <span class="n">food5</span><span class="p">)</span>
+<span class="n">food_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">food1</span><span class="p">,</span> <span class="n">food2</span><span class="p">,</span> <span class="n">food3</span><span class="p">,</span> <span class="n">food4</span><span class="p">,</span> <span class="n">food5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">food_list</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;pizza&#39;, &#39;hot dog&#39;, &#39;sushi&#39;, &#39;strawberry&#39;, &#39;sandwich&#39;]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
