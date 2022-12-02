@@ -499,7 +499,7 @@ casserole
 <li>A list is a sequence of elements with each element being a variable.</li>
 <li>An element is a part of a list, and can be accessed using indexes.</li>
 <li>An easy way to reference the elements in a list or string is using indexes, which select an element in respect to their order in the list or string.</li>
-<li></li>
+<li>An example of a string is "You can put literally anything inside of quotation marks."</li>
 </ol>
 <h2 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h2><ul>
 <li>Create a list with indices </li>
@@ -520,6 +520,43 @@ More work: Create a list of your favorite foods and create an index to access th
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food1</span> <span class="o">=</span> <span class="s2">&quot;Pizza&quot;</span>
+<span class="n">food2</span> <span class="o">=</span> <span class="s2">&quot;Icecream&quot;</span>
+<span class="n">food3</span> <span class="o">=</span> <span class="s2">&quot;Coffee&quot;</span>
+<span class="n">food4</span> <span class="o">=</span> <span class="s2">&quot;Mangos&quot;</span>
+<span class="n">food5</span> <span class="o">=</span> <span class="s2">&quot;Strawberries&quot;</span>
+<span class="n">food_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">food1</span><span class="p">,</span> <span class="n">food2</span><span class="p">,</span> <span class="n">food3</span><span class="p">,</span> <span class="n">food4</span><span class="p">,</span> <span class="n">food5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">food_list</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mangos
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Data-Abstraction-with-Lists---Steven">Data Abstraction with Lists - Steven<a class="anchor-link" href="#Data-Abstraction-with-Lists---Steven"> </a></h1><h2 id="Data-abstraction-can-be-created-with-lists.">Data abstraction can be created with lists.<a class="anchor-link" href="#Data-abstraction-can-be-created-with-lists."> </a></h2><ul>
@@ -808,7 +845,7 @@ deduva you scored 4/4
 <span class="n">food3</span> <span class="o">=</span> <span class="s2">&quot;sushi&quot;</span>
 <span class="n">food4</span> <span class="o">=</span> <span class="s2">&quot;strawberry&quot;</span>
 <span class="n">food5</span> <span class="o">=</span> <span class="s2">&quot;sandwich&quot;</span>
-<span class="n">food_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">food1</span><span class="p">,</span> <span class="n">food2</span><span class="p">,</span> <span class="n">food3</span><span class="p">,</span> <span class="n">food4</span><span class="p">,</span> <span class="n">food5</span><span class="p">]</span>
+<span class="n">food_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">food1</span> <span class="o">+</span> <span class="n">food2</span> <span class="o">+</span> <span class="n">food3</span> <span class="o">+</span> <span class="n">food4</span> <span class="o">+</span> <span class="n">food5</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">food_list</span><span class="p">)</span>
 </pre></div>
 
