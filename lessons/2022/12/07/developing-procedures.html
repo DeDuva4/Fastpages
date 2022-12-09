@@ -287,11 +287,13 @@ MOVE_FORWARD()</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">procedure</span><span class="p">()</span>
-    <span class="c1"># code goes here</span>
-    <span class="k">return</span> 
+<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">assignment_due</span><span class="p">(</span><span class="n">assignment_list</span><span class="p">):</span> <span class="c1"># This is a function that checks the due date in hours</span>
+    <span class="k">for</span> <span class="n">assignment</span> <span class="ow">in</span> <span class="n">assignment_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">assignment</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">24</span><span class="p">:</span> <span class="c1"># This checks if the hours left are less than 24</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">assignment</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># If the hours are less than 24 it will print the name of the assignment.</span>
 
-<span class="c1"># code goes here</span>
+<span class="n">assignment_list</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"assignment1"</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="p">[</span><span class="s2">"assignment2"</span><span class="p">,</span> <span class="mi">24</span><span class="p">],</span> <span class="p">[</span><span class="s2">"assignment3"</span><span class="p">,</span> <span class="mi">48</span><span class="p">]]</span> <span class="c1"># This is a list of assignemnts and their corresponding due times.</span>
+<span class="n">assignment_due</span><span class="p">(</span><span class="n">assignment_list</span><span class="p">)</span> <span class="c1"># This calls the function with the input of the list "assignment_list"</span>
 </pre></div>
 
     </div>
