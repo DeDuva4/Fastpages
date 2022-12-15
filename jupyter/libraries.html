@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
@@ -217,6 +217,14 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hacks:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks:<a class="anchor-link" href="#Hacks:"> </a>
 </h2>
 <p>Research two other Python Libraries NOT DISCUSSED DURING LESSON and make a markdown post, explaining their function and how it helps programmers code.</p>
+<ol>
+<li>
+<p>Matplotlib is a plotting library for creating static, animated, and interactive visualizations in Python. It provides a high-level interface for drawing attractive and informative statistical graphics. It can be used by programers to create good visuals and is a form of data abstraction.</p>
+</li>
+<li>
+<p>Pandas is a library for working with data frames in Python. A data frame is a two-dimensional data structure that consists of rows and columns. It is similar to a spreadsheet or a SQL table. This can be used by programers to easily create things such as the keypads from earlier weeks hacks.</p>
+</li>
+</ol>
 <h3 id="API’s">
 <a class="anchor" href="#API%E2%80%99s" aria-hidden="true"><span class="octicon octicon-link"></span></a>API’s<a class="anchor-link" href="#API%E2%80%99s"> </a>
 </h3>
@@ -313,6 +321,25 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Polynomial function, f(x):
+    2
+2 x + 1
+Derivative, f(x)'=  
+4 x
+When x=5  f(x)'= 20
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -390,7 +417,7 @@ PROCEDURE Dice(n)
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>7
+<pre>22
 </pre>
 </div>
 </div>
@@ -424,6 +451,119 @@ PROCEDURE Dice(n)
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">sort_numbers</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="c1"># Generate n random numbers</span>
+    <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+
+    <span class="c1"># Sort the numbers into two lists, one for even numbers and one for odd numbers</span>
+    <span class="n">even_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="n">odd_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">readable</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">even_numbers</span><span class="p">:</span>
+        <span class="n">readable</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="s2">", "</span> <span class="o">+</span> <span class="n">readable</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Even numbers:"</span><span class="p">,</span> <span class="n">readable</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">odd_numbers</span><span class="p">:</span>
+        <span class="n">readable</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="s2">", "</span> <span class="o">+</span> <span class="n">readable</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Odd numbers:"</span><span class="p">,</span> <span class="n">readable</span><span class="p">)</span>
+
+<span class="n">sort_numbers</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Even numbers: 90, 96, 88, 44, 78, 42, 34, 44, 24, 50, 
+Odd numbers: 77, 11, 33, 61, 35, 65, 13, 99, 57, 29, 90, 96, 88, 44, 78, 42, 34, 44, 24, 50, 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Create a poly1d object for the polynomial 2x^5 - 6x^2 + 24x</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Compute the derivative of the polynomial using the deriv method</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+
+<span class="c1"># Print the result</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The derivative of 2x^5 - 6x^2 + 24x is:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dp</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">()</span>
+<span class="c1"># Second derivative</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># Create a poly1d object for the polynomial (13x^4 + 4x^2) / 2</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Evaluate the polynomial at x = 9 using the __call__ method</span>
+<span class="n">p9</span> <span class="o">=</span> <span class="n">p</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+
+<span class="c1"># Compute the derivative of the polynomial using the deriv method</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+
+<span class="c1"># Print the result</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The derivative of (13x^4 + 4x^2) / 2 when x = 9 is </span><span class="si">{</span><span class="n">dp</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The derivative of 2x^5 - 6x^2 + 24x is:
+    4      2
+10 x - 18 x + 24
+
+
+The derivative of (13x^4 + 4x^2) / 2 when x = 9 is -51759.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
