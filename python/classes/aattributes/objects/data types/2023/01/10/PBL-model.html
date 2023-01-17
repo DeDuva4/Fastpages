@@ -405,9 +405,9 @@ window.onload = wrap_img;
 
 <span class="n">dob</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
 <span class="c1">#age = calculate_age(dob)</span>
-<span class="c1">#if date.today() &gt; dob:</span>
-    <span class="c1">#print(age)</span>
-<span class="c1">#else: print("N/A")</span>
+<span class="k">if</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">dob</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"N/A"</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">Player</span><span class="p">:</span>
     <span class="c1"># Constructing the player class</span>
