@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      5 min read
     
 </span></p>
 
@@ -510,14 +510,21 @@ Hello == Hola: True
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">score</span> <span class="o">=</span> <span class="mi">82</span>
-<span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got an A, congrats&quot;</span><span class="p">)</span>
-
-<span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">75</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please come to retake up to a 90 next week at tutorial!&quot;</span><span class="p">)</span>
-
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You have detention!&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;You got an A, congrats!&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">75</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Please come to retake up to a 90 next week at tutorial!&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;You have detention!&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
@@ -529,8 +536,12 @@ Hello == Hola: True
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Please come to retake up to a 90 next week at tutorial!
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [27]</span>
+<span class="ansi-red-fg">    if (score &gt;= 90)</span>
+                    ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
 </pre>
 </div>
 </div>
@@ -549,37 +560,33 @@ Hello == Hola: True
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">protein</span> <span class="o">=</span> <span class="mi">25</span>
-<span class="n">carbs</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="n">sugar</span> <span class="o">=</span> <span class="mi">10</span>
-
-<span class="k">if</span> <span class="n">carbs</span> <span class="o">&gt;=</span> <span class="mi">55</span> <span class="ow">and</span> <span class="n">protein</span> <span class="o">&lt;=</span> <span class="mi">20</span> <span class="ow">and</span> <span class="n">sugar</span><span class="o">&gt;=</span> <span class="mi">15</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your lunch is too unhealthy, please pick a new one.&quot;</span><span class="p">)</span>
-
-<span class="k">elif</span> <span class="n">carbs</span> <span class="o">&lt;</span> <span class="mi">35</span> <span class="ow">and</span> <span class="n">protein</span> <span class="o">&lt;</span><span class="mi">25</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This lunch is alright but try to add some more carbs or protein.&quot;</span><span class="p">)</span>
-
-<span class="k">elif</span> <span class="n">sugar</span> <span class="o">&gt;=</span> <span class="mi">11</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Looks great but lets see if we can cut down on sugar, we don&#39;t want diabetes!&quot;</span><span class="p">)</span>
-
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Amazing, you created a healthy lunch!!!&#39;</span><span class="p">)</span>
+<span class="n">carbs</span> <span class="o">=</span> <span class="mi">36</span>
+<span class="n">sugar</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">carbs</span> <span class="o">&gt;=</span> <span class="mi">55</span> <span class="o">||</span> <span class="n">protein</span> <span class="o">&lt;=</span> <span class="mi">20</span> <span class="o">||</span> <span class="n">sugar</span> <span class="o">&gt;=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Your lunch is too unhealthy, please pick a new one&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">carbs</span> <span class="o">&lt;</span> <span class="mi">35</span> <span class="o">||</span> <span class="n">protein</span> <span class="o">&lt;</span> <span class="mi">25</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span> <span class="p">(</span><span class="s2">&quot;This lunch is alright but try to add some more carbs or protein&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">else</span> 
+    <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">sugar</span> <span class="o">&gt;=</span> <span class="mi">11</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span> <span class="p">(</span><span class="s2">&quot;Looks great but lets see if we can cut down on sugar, we don&#39;t want diabetes!&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span> <span class="p">(</span><span class="s2">&quot;Amazing, you created a healthy lunch!!!&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Amazing, you created a healthy lunch!!!
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -609,36 +616,12 @@ Hello == Hola: True
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">hours</span> <span class="o">=</span> <span class="mi">10</span>
+
 <span class="k">if</span> <span class="n">hours</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>
     <span class="n">exp_lvl</span> <span class="o">=</span> <span class="s2">&quot;experienced&quot;</span>
-    <span class="n">salary</span> <span class="o">=</span> <span class="s2">&quot;150K&quot;</span>
-
-<span class="k">elif</span> <span class="n">hours</span> <span class="o">&gt;=</span> <span class="mi">8</span><span class="p">:</span>
-    <span class="n">exp_lvl</span> <span class="o">=</span> <span class="s2">&quot;experienced&quot;</span>
-    <span class="n">salary</span> <span class="o">=</span> <span class="s2">&quot;90K&quot;</span>
-
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">exp_lvl</span> <span class="o">=</span> <span class="s2">&quot;inexperienced&quot;</span>
-    <span class="n">salary</span> <span class="o">=</span> <span class="s2">&quot;50K&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This person is&quot;</span><span class="p">,</span> <span class="n">exp_lvl</span><span class="p">,</span> <span class="s2">&quot;and their salary is&quot;</span><span class="p">,</span> <span class="n">salary</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>This person is experienced and their salary is 150K
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -669,38 +652,14 @@ Hello == Hola: True
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here is a python template for you to use.</span>
-<span class="n">expiration</span> <span class="o">=</span> <span class="s2">&quot;unexpired&quot;</span>
-<span class="n">cost</span> <span class="o">=</span> <span class="mi">40</span>
-
-
-<span class="k">if</span> <span class="n">expiration</span> <span class="o">==</span> <span class="s2">&quot;expired&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This product is no good.&quot;</span><span class="p">)</span>
-
-<span class="k">elif</span> <span class="n">cost</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This product is too expensive.&quot;</span><span class="p">)</span>
-
-<span class="k">elif</span> <span class="n">cost</span> <span class="o">&gt;=</span> <span class="mi">25</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a regular product.&quot;</span><span class="p">)</span>
-
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a cheap product.&quot;</span><span class="p">)</span>
+ 
+<span class="k">if</span> <span class="p">():</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span> 
+<span class="k">else</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span> 
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>This is a regular product.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -725,49 +684,6 @@ Hello == Hola: True
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">points</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many hours does the average person sleep?&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="s2">&quot;7&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct answer!&quot;</span><span class="p">)</span>
-    <span class="n">points</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;incorrect answer&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The correct answer was 7&quot;</span><span class="p">)</span>
-
-<span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;When was the first iPhone made?&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="s2">&quot;2007&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct answer!&quot;</span><span class="p">)</span>
-    <span class="n">points</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;incorrect answer&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The correct answer was 2007&quot;</span><span class="p">)</span>
-
-<span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Who was the 16th President of the United States?&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="s2">&quot;Abraham Lincoln&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct answer!&quot;</span><span class="p">)</span>
-    <span class="n">points</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;incorrect answer&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The correct answer was Abraham Lincoln&quot;</span><span class="p">)</span>
-    
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got:&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">points</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
 </div>
 
 

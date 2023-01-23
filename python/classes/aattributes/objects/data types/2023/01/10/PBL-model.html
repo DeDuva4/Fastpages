@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -301,26 +301,26 @@ window.onload = wrap_img;
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
 
     <span class="c1"># define user objects</span>
-    <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Thomas Edison'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'toby'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123toby'</span><span class="p">)</span>
-    <span class="n">u2</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Nicholas Tesla'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'nick'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123nick'</span><span class="p">)</span>
-    <span class="n">u3</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Alexander Graham Bell'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'lex'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123lex'</span><span class="p">)</span>
-    <span class="n">u4</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Eli Whitney'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'eli'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123eli'</span><span class="p">)</span>
-    <span class="n">u5</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Hedy Lemarr'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'hedy'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123hedy'</span><span class="p">)</span>
+    <span class="c1">#u1 = User(name='Thomas Edison', uid='toby', password='123toby', classOf='1855', dob='', age='')</span>
+    <span class="c1">#u2 = User(name='Nicholas Tesla', uid='nick', password='123nick', classOf='', dob='', age='')</span>
+    <span class="c1">#u3 = User(name='Alexander Graham Bell', uid='lex', password='123lex', classOf='', dob='', age='')</span>
+    <span class="c1">#u4 = User(name='Eli Whitney', uid='eli', password='123eli', classOf='', dob='', age='')</span>
+    <span class="c1">#u5 = User(name='Hedy Lemarr', uid='hedy', password='123hedy', classOf='', dob='', age='')</span>
 
     <span class="c1"># put user objects in list for convenience</span>
-    <span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">,</span> <span class="n">u5</span><span class="p">]</span>
+    <span class="c1">#users = [u1, u2, u3, u4, u5]</span>
 
     <span class="c1"># Find user</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 1, find user 3"</span><span class="p">)</span>
-    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u3</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"123lex"</span><span class="p">)</span>
+    <span class="c1">#u = tester(users, u3.uid, "123lex")</span>
 
 
     <span class="c1"># Change user</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 2, change user 3"</span><span class="p">)</span>
-    <span class="n">u</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"John Mortensen"</span>
-    <span class="n">u</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="s2">"jm1021"</span>
-    <span class="n">u</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="s2">"123qwerty"</span><span class="p">)</span>
-    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"123qwerty"</span><span class="p">)</span>
+    <span class="c1">#print("Test 2, change user 3")</span>
+    <span class="c1">#u.name = "John Mortensen"</span>
+    <span class="c1">#u.uid = "jm1021"</span>
+    <span class="c1">#u.set_password("123qwerty")</span>
+    <span class="c1">#u = tester(users, u.uid, "123qwerty")</span>
 
 
     <span class="c1"># Make dictionary</span>
@@ -330,15 +330,31 @@ window.onload = wrap_img;
 <span class="sd">    Use the json.dumps() method to convert the list of Users to a JSON string.</span>
 <span class="sd">    '''</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 3, make a dictionary"</span><span class="p">)</span>
-    <span class="n">json_string</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">([</span><span class="n">user</span><span class="o">.</span><span class="vm">__dict__</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">])</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span>
+    <span class="c1">#json_string = json.dumps([user.__dict__ for user in users]) </span>
+    <span class="c1">#print(json_string)</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 4, make a dictionary"</span><span class="p">)</span>
-    <span class="n">json_string</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">([</span><span class="nb">vars</span><span class="p">(</span><span class="n">user</span><span class="p">)</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">])</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span>
+    <span class="c1">#json_string = json.dumps([vars(user) for user in users]) </span>
+    <span class="c1">#print(json_string)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Test 1, find user 3
+Test 3, make a dictionary
+Test 4, make a dictionary
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -405,9 +421,9 @@ window.onload = wrap_img;
 
 <span class="n">dob</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
 <span class="c1">#age = calculate_age(dob)</span>
-<span class="k">if</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">dob</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"N/A"</span><span class="p">)</span>
+<span class="c1">#if date.today() &gt; dob:</span>
+    <span class="c1">#print(age)</span>
+<span class="c1">#else: print("N/A")</span>
 
 <span class="k">class</span> <span class="nc">Player</span><span class="p">:</span>
     <span class="c1"># Constructing the player class</span>
@@ -422,20 +438,6 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>18
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -457,13 +459,44 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movies</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Star Wars"</span> <span class="p">,</span> <span class="s2">"Christmas Vacation"</span> <span class="p">,</span> <span class="s2">"Back to the future"</span> <span class="p">,</span> <span class="s2">"Glass Onion"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movies</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Star Wars'</span><span class="p">,</span> <span class="s1">'Back to the Future'</span><span class="p">,</span> <span class="s1">'Christmas Vacation'</span><span class="p">,</span> <span class="s1">'Glass Onion'</span><span class="p">]</span>
+<span class="k">class</span> <span class="nc">Viewer</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">favorite_movie</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">age</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_favorite_movie</span> <span class="o">=</span> <span class="n">favorite_movie</span>
 
-<span class="c1">#class viewer:</span>
-    <span class="c1"># A constructor of a user object</span>
+    <span class="k">def</span> <span class="nf">adult_check</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You are old enough to watch this movie"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You are not old enough to watch this movie. You must be 18."</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_favorite_movie</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your favorite movie."</span><span class="p">)</span>
+
+<span class="n">v1</span> <span class="o">=</span> <span class="n">Viewer</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Mr. Mort"</span><span class="p">,</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="n">favorite_movie</span><span class="o">=</span> <span class="s2">"Christmas Vacation"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">v1</span><span class="o">.</span><span class="n">_favorite_movie</span><span class="p">)</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="n">Viewer</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Mr. Yeung"</span><span class="p">,</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="n">favorite_movie</span><span class="o">=</span> <span class="s2">"Glass Onion"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">v2</span><span class="o">.</span><span class="n">_favorite_movie</span><span class="p">)</span>
+<span class="n">v3</span> <span class="o">=</span> <span class="n">Viewer</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Dhruva"</span><span class="p">,</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">favorite_movie</span><span class="o">=</span> <span class="s2">"Star Wars"</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Christmas Vacation
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -495,8 +528,7 @@ window.onload = wrap_img;
         <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>    <span class="c1"># variables with self prefix become part of the object, </span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span> <span class="o">=</span> <span class="n">uid</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="n">dob</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span> <span class="o">=</span> <span class="n">dob</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_classOf</span> <span class="o">=</span> <span class="n">classOf</span>
 
     <span class="c1"># a classOf getter function</span>
@@ -582,7 +614,7 @@ window.onload = wrap_img;
     
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
-    <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Thomas Edison'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'toby'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123toby'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">1847</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+    <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Thomas Edison'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'toby'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123toby'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">1847</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">classOf</span><span class="o">=</span><span class="mi">1850</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"JSON ready string:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">u1</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Raw Variables of object:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="nb">vars</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Raw Attributes and Methods of object:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="nb">dir</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
@@ -590,6 +622,31 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>JSON ready string:
+ {"name": "Thomas Edison", "uid": "toby", "dob": "02-11-1847", "age": 175} 
+
+Raw Variables of object:
+ {'_name': 'Thomas Edison', '_uid': 'toby', '_password': 'sha256$3i1FLvJuA1wh6dgP$31936762f746e054a599f1f546aeddbda5b3e335882e935fe3f02464ea9db15a', '_dob': datetime.date(1847, 2, 11), '_classOf': 1850} 
+
+Raw Attributes and Methods of object:
+ ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_classOf', '_dob', '_name', '_password', '_uid', 'age', 'classOf', 'dictionary', 'dob', 'is_password', 'is_uid', 'name', 'set_password', 'uid'] 
+
+Representation to Re-Create the object:
+ User(name=Thomas Edison, uid=toby, password=sha256$3i1FLvJuA1wh6dgP$31936762f746e054a599f1f546aeddbda5b3e335882e935fe3f02464ea9db15a,dob=1847-02-11) 
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
