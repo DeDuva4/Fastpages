@@ -7,7 +7,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -565,7 +565,7 @@
 <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;brown&quot;</span>
 <span class="n">length</span> <span class="o">=</span> <span class="s2">&quot;short&quot;</span>
 <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;straight&quot;</span>
-<span class="n">hair</span> <span class="o">=</span> <span class="nb">type</span> <span class="o">+</span> <span class="n">color</span> <span class="o">+</span> <span class="n">length</span>
+<span class="n">hair</span> <span class="o">=</span> <span class="nb">type</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">color</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">length</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">hair</span><span class="p">)</span>
 </pre></div>
 
@@ -579,7 +579,7 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>straightbrownshort
+<pre>straight brown short!!!
 </pre>
 </div>
 </div>
@@ -621,20 +621,13 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">substring</span><span class="p">(</span><span class="n">string</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">):</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">result</span>
-
-
-<span class="n">Noun</span> <span class="o">=</span> <span class="s2">&quot;Mr.Mortenson&quot;</span> 
-<span class="n">Adjective</span> <span class="o">=</span> <span class="s2">&quot;handsome&quot;</span> 
-<span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">&quot;very&quot;</span> 
-<span class="n">Verb</span> <span class="o">=</span> <span class="s2">&quot;is&quot;</span> 
-<span class="n">abrev</span> <span class="o">=</span> <span class="p">(</span><span class="n">Noun</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
-
-<span class="n">concated_string</span> <span class="o">=</span> <span class="n">Noun</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Verb</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective2</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">concated_string</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Noun</span> <span class="o">=</span> <span class="s2">&quot;Mr.Mortenson&quot;</span> <span class="c1"># the psuedocode will assign the string &quot;Mr.Mortenson&quot; to the variable Noun </span>
+<span class="n">Adjective</span> <span class="o">=</span> <span class="s2">&quot;handsome&quot;</span> <span class="c1"># the psuedocode will assign the string &quot;handsome&quot; to the variable Adjective</span>
+<span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">&quot;Very&quot;</span> <span class="c1"># the psuedocode will assign the string &quot;Very&quot; to the variable Adjective2</span>
+<span class="n">Verb</span> <span class="o">=</span> <span class="s2">&quot;is&quot;</span> <span class="c1"># the psuedocode will assign the string &quot;is&quot; to the variable Verb</span>
+<span class="n">abrev</span> <span class="o">=</span> <span class="n">Noun</span><span class="p">[:</span><span class="mi">7</span><span class="p">]</span> <span class="c1"># the psuedocode will substring the variable noun from index 1 to 7, and then store the resulting string in a variable abrev</span>
+<span class="n">yoda</span> <span class="o">=</span> <span class="n">Adjective2</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">abrev</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Verb</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">yoda</span><span class="p">)</span> <span class="c1"># the pusedocode would display Very handsome Mr.Mort is</span>
 </pre></div>
 
     </div>
@@ -647,7 +640,7 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Mr.Mortenson is very handsome.
+<pre>Very handsome Mr.Mort is.
 </pre>
 </div>
 </div>
@@ -672,16 +665,14 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;choclate&quot;</span><span class="p">)</span>
-<span class="n">cookie2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;rasin&quot;</span><span class="p">)</span>
-<span class="n">len1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">len2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie2</span> <span class="o">*</span> <span class="mi">45</span><span class="p">)</span>
-<span class="n">cookie</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span>
-<span class="n">cookie2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span>
-<span class="n">vote1</span> <span class="o">=</span> <span class="n">cookie</span> <span class="o">+</span> <span class="s2">&quot; vote &quot;</span> <span class="o">+</span> <span class="n">len2</span>
-<span class="n">vote2</span> <span class="o">=</span> <span class="n">cookie2</span> <span class="o">+</span> <span class="s2">&quot; vote &quot;</span> <span class="o">+</span> <span class="n">len1</span>
-<span class="n">votes</span> <span class="o">=</span> <span class="n">vote1</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span> <span class="n">vote2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">&quot;choclate&quot;</span> <span class="c1"># the psuedocode will assign the string &quot;choclate&quot; to the variable cookie</span>
+<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">&quot;rasin&quot;</span> <span class="c1"># the psuedocode will assign the string &quot;rasin&quot; to the variable cookie2</span>
+<span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># the psuedocode will divide the length of the string cookie by 2 and then store it in a variable len1</span>
+<span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span> <span class="c1"># the psuedocode will multiply the length of the string cookie2 by 45 and then store it in a variable len2</span>
+<span class="n">vote1</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; vote &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">))</span> 
+<span class="n">vote2</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; vote &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">))</span> 
+<span class="n">votes</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">vote1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">vote2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="c1"># the psuedocode would display choclate vote 225 rasin vote 4.0.</span>
 </pre></div>
 
     </div>
@@ -694,7 +685,7 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>8 vote 225 and 5 vote 4.0
+<pre>choclate vote 225 rasin vote 4.0
 </pre>
 </div>
 </div>
