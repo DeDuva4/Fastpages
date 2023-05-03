@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      12 min read
+      17 min read
     
 </span></p>
 
@@ -235,11 +235,14 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>Give an example of iteration.</li>
-<li>What is the difference between a for loop and while loop? That is, when would you use a for loop and when would you use a while loop?</li>
+<li>Give an example of iteration.
+##### An example of iteration is printing out each element of a list using a for loop in Python:</li>
+<li>What is the difference between a for loop and while loop? That is, when would you use a for loop and when would you use a while loop?
+##### The main difference between a for loop and a while loop is that a for loop is used to iterate over a sequence of elements (such as a list), whereas a while loop is used to repeatedly execute a block of code while a certain condition is true. In general, you would use a for loop when you know the number of times you need to iterate (such as when looping through a list), and a while loop when you don't know the number of times you need to iterate (such as when waiting for a user to input valid data).</li>
 <li>In the APCSP AP exam, what number do indexes start with? <strong>important to know</strong>
-</li>
-<li>Are dictionaries and lists mutable?</li>
+##### In the APCSP AP exam, indexes start at 0 for arrays and lists.</li>
+<li>Are dictionaries and lists mutable?
+##### Lists in Python are mutable, which means that you can change their contents (such as adding or removing elements). Dictionaries are also mutable, which means that you can change the value associated with a given key.</li>
 </ol>
 
 </div>
@@ -289,8 +292,10 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>Explain an example of something you could simulate.</li>
-<li>Why are simulations useful and important?</li>
+<li>Explain an example of something you could simulate.
+##### You could simulate a cheaper type of jet fuel for airplanes. This would be much cheaper than to actually use this new jet fuel, because even though its cheaper, its still very expensive to buy any type of jet fuel. This could allow you to asses the pros and cons of the cheaper fuel, and to see how viable it is for commercial use.</li>
+<li>Why are simulations useful and important?
+##### They allow for people to test out ideas that are not known to be safe, cost effective, reliable, and consistent. These ideas might be better than the current solution. so it is very beneficial to simulate them to try them out.</li>
 </ol>
 
 </div>
@@ -421,9 +426,10 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>Describe a situation where you would need iteration.</li>
+<li>Describe a situation where you would need iteration.
+##### If you needed a piece of a program to repeat itself over and over again, and it would be faster to write that code using iteration rather than manually copy pasting it.</li>
 <li>Describe the difference between a "REPEAT n TIMES" loop VS a "REPEAT UNTIL (condition)" loop. <mark>it is important you know this for the AP Exam</mark>
-</li>
+##### A repeat n times loop will repeat the code inside it a specific number of n times. If n is 3 it will repeat 3 times. A repeat until condition loop will keep repeating until a certain condition is met. Lets say it is repeating until a list will have 10 elements or more in it. If the list length increases after each iteration, it will eventually reach 10, and stop iterating.</li>
 </ol>
 
 </div>
@@ -458,7 +464,8 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>What are some libraries that we've learned about? What are their advantages/disadvantages?</li>
+<li>What are some libraries that we've learned about? What are their advantages/disadvantages?
+##### Pandas, SQLAlchemy, NumPy, Werkzeurg Security. Their advantages are they have pre-written code that can help you with certain tasks that are used in many places, but very difficult to write code for. Their disadvantages are that they often times do not accomplish the exact task you want, so you will still have to use a lot of innovation and thinking to determine how to get a program working even when using libraries. They can also lead to bugs and other issues that are very difficult to find because their code does not show up and it is very hard to know if the library isn't working as intended.</li>
 </ol>
 
 </div>
@@ -528,8 +535,10 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>Compare and contrast lists and dictionaries.</li>
-<li>Do dictionary keys need to be unique?</li>
+<li>Compare and contrast lists and dictionaries.
+##### Lists consist of many different variables or elements, each assigned with a different index starting from 0, which is the order from first to last in the list. (College board starts at index 1). Dictionaries are similar to lists in the sense that they can store various different elements, but these elements have to all be assigned under a key. Each key will have a corresponding value assigned to it. If you try to perform any function, and give the key as the input, it will input the value instead, rather than the key.</li>
+<li>Do dictionary keys need to be unique?
+##### Yes, in Python, dictionary keys must be unique. This is because a dictionary is essentially a mapping between keys and values, and if there were multiple keys with the same name, it would be unclear which value should be associated with each key. If you try to add a key to a dictionary that already exists, the previous value associated with that key will be overwritten by the new value.</li>
 </ol>
 
 </div>
@@ -688,7 +697,8 @@ track #17: the lakes
 <span class="n">reversed_list</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">original_list</span><span class="p">:</span>
   <span class="n">reversed_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span><span class="p">]</span> <span class="o">+</span> <span class="n">reversed_list</span>
-<span class="c1"># print("List after reverse : ", reversed_list)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"List after reverse : "</span><span class="p">,</span> <span class="n">reversed_list</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -702,6 +712,7 @@ track #17: the lakes
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>List before reverse :  [1, 2, 3, 4, 5]
+List after reverse :  [5, 4, 3, 2, 1]
 </pre>
 </div>
 </div>
@@ -742,7 +753,7 @@ track #17: the lakes
                 <span class="k">break</span>
 
 <span class="n">IS</span> <span class="o">=</span> <span class="n">insertion_sort</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
-<span class="c1"># print(f"array after sort {list}")</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"array after sort </span><span class="si">{</span><span class="nb">list</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -756,6 +767,7 @@ track #17: the lakes
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>array before sort [9, 8, 4, 3, 5, 2, 6, 7, 1, 0]
+array after sort [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 </pre>
 </div>
 </div>
@@ -869,7 +881,8 @@ track #17: the lakes
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>How is list comprehension similar to iteration?</li>
+<li>How is list comprehension similar to iteration?
+##### List comprehension and iteration are similar in that they both allow you to loop over a sequence of items and perform some operation on each item. In iteration, you use a loop construct, such as a for loop, to iterate over each item in the sequence and perform an operation on it. This is done using statements that tell the computer how to move through each item in the sequence. List comprehension, on the other hand, is a concise way to create a new list by iterating over an existing sequence and performing some operation on each item. The syntax of list comprehension is similar to that of a loop construct, but it combines the iteration and operation steps into a single expression. This makes the code more concise and easier to read. So, in essence, list comprehension is a type of iteration that allows you to perform a specific operation on each item in a sequence and create a new list in a single step, whereas iteration involves using a loop to move through the sequence and perform operations on each item separately.</li>
 </ol>
 
 </div>
